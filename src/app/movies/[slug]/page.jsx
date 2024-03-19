@@ -1,10 +1,11 @@
 import Related from "../components/Related";
 import Button from "../Button";
+import { API_KEY } from "../../../constants/Constant";
 
 const getData = async (slug) => {
   try {
     const movieRes = await fetch(
-      `https://api.themoviedb.org/3/movie/${slug}?api_key=48e41f6ee33e906a87bf9f5600912834`
+      `https://api.themoviedb.org/3/movie/${slug}?api_key=${API_KEY}`
     );
 
     if (movieRes.ok) {
@@ -16,7 +17,7 @@ const getData = async (slug) => {
 
   try {
     const tvRes = await fetch(
-      `https://api.themoviedb.org/3/tv/${slug}?api_key=48e41f6ee33e906a87bf9f5600912834`
+      `https://api.themoviedb.org/3/tv/${slug}?api_key=${API_KEY}`
     );
 
     if (tvRes.ok) {
