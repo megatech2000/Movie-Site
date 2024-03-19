@@ -28,10 +28,10 @@ const TvData = () => {
     };
 
     fetchData();
-  }, [page]); // Fetch data when page state changes
+  }, [page]);
 
   const loadMore = () => {
-    setPage((prevPage) => prevPage + 1); // Increment page number to load more results
+    setPage((prevPage) => prevPage + 1);
   };
 
   return (
@@ -49,6 +49,9 @@ const TvData = () => {
                 alt="movie image"
               />
             </Link>
+            <div className="text-white text-center pt-5">
+              <p>{item.title}</p>
+            </div>
           </div>
         ))}
       </div>
