@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+li {
+  color: #000;
+}
+body {
+  background-color: #141414;
+}
+
+.title-name {
+  transition: all 400ms;
+}
+.title-name:hover {
+  transform: scale(1.1);
+}
+h1 {
+  color: #fff;
+}
+.nav-section {
+  transition: all 400ms;
+}
+.scrollside::-webkit-scrollbar {
+  display: none;
+}
+.posters {
+  transform: scale(1.2);
+}
+.moviesOne:hover {
+  transform: scale(1.1);
+}
+.movieTwo {
+  transition: all 500ms;
+}
+.movieTwo:hover {
+  transform: scale(1.1);
+}
