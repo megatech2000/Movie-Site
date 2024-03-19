@@ -1,6 +1,6 @@
 "use client";
 
-import { API_KEY } from "@/constants/Constant";
+import { API_KEY } from "../../../constants/Constant";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
