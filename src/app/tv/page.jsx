@@ -19,7 +19,7 @@ const TvData = () => {
           throw new Error("Failed to fetch data");
         }
         const data = await res.json();
-        setPosts((prevPosts) => [...prevPosts, ...data.results]); // Append new results to existing ones
+        setPosts((prevPosts) => [...prevPosts, ...data.results]);
         setLoading(false);
         console.log(data.results);
       } catch (error) {
@@ -50,7 +50,7 @@ const TvData = () => {
               />
             </Link>
             <div className="text-white text-center pt-5">
-              <p>{item.title}</p>
+              <p>{item.name}</p>
             </div>
           </div>
         ))}
