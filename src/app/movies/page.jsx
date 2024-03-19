@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { API_KEY } from "../../constants/Constant";
 
 const movieData = () => {
   const [posts, setPosts] = useState([]);
@@ -12,7 +13,7 @@ const movieData = () => {
     const fetchData = async () => {
       try {
         const res = await fetch(
-          `https://api.themoviedb.org/3/discover/movie?api_key=48e41f6ee33e906a87bf9f5600912834&include_adult=false&include_null_first_air_dates=false&language=en-US&page=${page}&sort_by=popularity.desc`
+          `https://api.themoviedb.org/3/discover/movie?api_key=${API_KEY}&include_adult=false&include_null_first_air_dates=false&language=en-US&page=${page}&sort_by=popularity.desc`
         );
         if (!res.ok) {
           throw new Error("Failed to fetch data");
