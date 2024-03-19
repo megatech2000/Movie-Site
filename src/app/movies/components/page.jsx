@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 
 const movieData = () => {
   const [posts, setPosts] = useState([]);
-  const [page, setPage] = useState(2); // Starting from page 2
+  const [page, setPage] = useState(2);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
@@ -32,7 +32,7 @@ const movieData = () => {
   }, [page]); // Fetch data when page state changes
 
   const loadMore = () => {
-    setPage((prevPage) => prevPage + 1); // Increment page number to load more results
+    setPage((prevPage) => prevPage + 1);
   };
 
   return (
