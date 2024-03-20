@@ -12,7 +12,7 @@ const Movie = () => {
     const fetchData = async () => {
       try {
         const res = await fetch(
-          `https://api.themoviedb.org/3/discover/tv?api_key=${API_KEY}&include_adult=false&include_null_first_air_dates=false&language=en-US&page=2&sort_by=popularity.desc`
+          `https://api.themoviedb.org/3/movie/popular?api_key=${API_KEY}&language=en-US&page=4`
         );
         if (!res.ok) {
           throw new Error("Failed to fetch data");

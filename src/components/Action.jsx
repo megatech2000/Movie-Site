@@ -40,7 +40,7 @@ const Action = ({ title, url }) => {
                 />
               </Link>
               <div className="text-white text-center pt-5">
-                <p>{item.title}</p>
+                <p>{`${item.title} && ${item.name} `}</p>
               </div>
             </div>
           ))}
