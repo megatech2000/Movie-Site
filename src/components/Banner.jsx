@@ -48,7 +48,7 @@ const Banner = () => {
             clickable: true,
           }}
           modules={[Autoplay, Pagination]}
-          className="mySwiper w-full h-[500px]"
+          className="mySwiper w-full h-[500px] 2xl:h-[800px]"
         >
           {posts.map((item, i) => {
             return (
