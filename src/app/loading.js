@@ -1,7 +1,7 @@
 const loading = () => {
   return (
-    <div>
-      <h1>Page Loading...</h1>
+    <div className="h-[100vh]">
+      <h1 className="text-white">Loading</h1>
     </div>
   );
 };
