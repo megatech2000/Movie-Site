@@ -1,3 +1,4 @@
+"use client";
 import Action from "../components/Action";
 import Banner from "../components/Banner";
 import Movie from "../components/Movie";
@@ -5,9 +6,15 @@ import { API_KEY } from "./../constants/Constant";
 
 export default function Home() {
   return (
-    <div>
+    <section>
       <div>
         <Banner />
+        <button
+          onClick={() => signOut()}
+          className="px-10 py-2 bg-[#fff] text-black"
+        >
+          Logout
+        </button>
         <Movie />
         <Action
           url={`https://api.themoviedb.org/3/discover/movie?api_key=${API_KEY}`}
@@ -50,6 +57,6 @@ export default function Home() {
           title="Up Coming"
         />
       </div>
-    </div>
+    </section>
   );
 }

@@ -6,6 +6,7 @@ const page = () => {
           Under Maintance !!!
         </h1>
       </div>
+      <div></div>
     </section>
   );
 };
